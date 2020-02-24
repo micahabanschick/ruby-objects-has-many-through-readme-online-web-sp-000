@@ -9,6 +9,7 @@ class Waiter
     @exp = exp 
     @meals = []
     @customers = []
+    @tips = []
     @@all << self 
   end 
   
