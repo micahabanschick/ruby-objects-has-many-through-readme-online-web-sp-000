@@ -1,6 +1,6 @@
 class Waiter 
   
-  attr_accessor :name, :exp, :meals, :customers  
+  attr_accessor :name, :exp, :meals, :customers, :tips  
   
   @@all = []
   
@@ -26,6 +26,10 @@ class Waiter
   
   def customers
     @customers
+  end 
+  
+  def tips
+    @tips 
   end 
   
   def best_tipper
