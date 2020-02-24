@@ -33,7 +33,7 @@ class Waiter
   end 
   
   def best_tipper
-    @meals.map{|meal| meal.customer if meal.tip.max}
+    @meals.find{|meal| meal.customer if meal.tip == tips.max}
   end 
   
 end
