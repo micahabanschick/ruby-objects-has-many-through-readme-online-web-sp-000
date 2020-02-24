@@ -33,7 +33,7 @@ class Waiter
   end 
   
   def best_tipper
-    @meals.find{|meal| meal.customer if meal.tip == tips.max}
+    @meals.find{|meal| meal.customer if meal.tip == self.tips.max}
   end 
   
 end
