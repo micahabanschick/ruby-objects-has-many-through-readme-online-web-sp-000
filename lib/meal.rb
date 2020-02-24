@@ -13,6 +13,7 @@ class Meal
     customer.waiters << waiter 
     waiter.meals << self 
     waiter.customers << customer 
+    waiter.tips << tip 
     @@all << self 
   end 
   
